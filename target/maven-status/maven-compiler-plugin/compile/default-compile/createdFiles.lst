@@ -1,5 +1,0 @@
-com\example\backend\BackendApplication.class
-com\example\backend\bean\Test.class
-com\example\backend\controller\MainController.class
-com\example\backend\helpers\HttpServices.class
-com\example\backend\config\WebConfig.class

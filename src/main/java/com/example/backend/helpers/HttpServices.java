@@ -16,17 +16,17 @@ import java.util.List;
 
 public class HttpServices {
 
-    static String link = "https://www.nettruyenee.com/";
+    static String link = "https://www.nettruyen4.com/";
 
     static HttpClient client = HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(10))
             .build();
 
     private static String urlWeb(String url) {
-//        if (url.contains("?page=1")) {
-//            url = url.replace("?page=1", "");
-//        }
-//        return "https://webcache.googleusercontent.com/search?q=cache:" + url;
-        return url;
+        if (url.contains("?page=1")) {
+            url = url.replace("?page=1", "");
+        }
+        return "https://webcache.googleusercontent.com/search?q=cache:" + url;
+//        return url;
     }
 
     public static String getResponseString(String url, String referer) throws IOException, InterruptedException {
